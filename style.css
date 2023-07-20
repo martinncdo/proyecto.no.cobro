@@ -1,0 +1,559 @@
+:root {
+    --neue-font: 'Neue Haas Grotesk Display Pro', sans-serif;
+    --akira-font: 'Akira Expanded', sans-serif;      
+}
+
+/* Reset CSS */
+
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: sans-serif;
+}
+
+/* Utilities */
+
+p {
+    margin-bottom: 0;
+}
+
+.red {
+    color: red;
+}
+
+.border {
+    border: thin solid white;
+}
+
+.capa-inicio {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .25);
+}
+
+/* Barra de navegación */
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-propio {
+    z-index: 1;
+    padding: 1.2rem;
+    position: sticky;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .9);;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-propio .logo-visions {
+    color: black;
+    padding: .1rem .1rem;
+    background: white;
+    font-family: 'Akira Expanded', sans-serif;                                               
+}
+
+.navbar-propio .opciones-seccion {
+    display: flex;
+    flex-grow: 1;
+    position: relative;
+    top: .5rem;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 6rem;
+}
+
+.navbar-propio .opciones-seccion li {
+    list-style: none;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: .8rem;                                                
+    color: white;
+    margin-left: 1.5rem;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: black;
+    width: 100%;
+    height: 7rem;
+    font-family: var(--neue-font);
+}
+
+.redes-sociales .redes{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.redes i {
+    margin-right: 1rem;
+}
+
+/* SECCIÓN INICIO */
+
+#inicio {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/fogata.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Primer página */
+
+.container-propio {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.column1, 
+.column2 {
+    flex-grow: 1;
+}
+
+/* Lado izquierdo desktop */
+
+.column1 {
+    position: relative;
+    padding: 1rem;
+}
+
+.column1 .cuadrado1 {
+    position: absolute;
+    top: 2.2rem;
+    left: 1.5rem;
+    height: 50vh;
+    width: 48%;
+    background-color: black;
+    padding: 20px;
+    background-image: url(img/rosa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: groove solid black;
+}
+
+.column1 .cuadrado2 {
+    border: groove solid black;
+    position: absolute;
+    bottom: 3rem;
+    right: 7rem;
+    height: 35vh;
+    width: 60%;
+    background-image: url(img/pasto-persona.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.column1 .cuadrado3 {
+    border: groove solid black;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    height: 53vh;
+    width: 45%;
+    background-color: black;
+    padding: 20px;
+    background-image: url(img/faro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cuadrado1:hover,
+.cuadrado2:hover,
+.cuadrado3:hover {
+    transform: scale(1.02);
+    transition: all .2s;
+}
+
+/* Lado derecho desktop */
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.column2 .titulo {
+    font-family: var(--neue-font);
+    color: white;
+    font-size: 3rem;
+    font-weight: 300;
+    position: relative;
+    bottom: 27px;
+    text-align: center;
+    margin-right: 2rem;
+    margin-left: 1.5rem;
+}
+
+.column2 .presentacion {
+    background-color: black;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem .5rem;
+    line-height: 1.4rem;
+    color: white;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+}
+
+
+.column2 .btn-a-trabajos {
+    padding: .4rem;
+    border: thin solid white;
+    background-color: rgba(0, 0, 0, .5);
+    font-size: .9rem;
+    border-radius: 1rem;
+    margin-top: .5rem;
+    font-family: var(--neue-font);
+}
+
+.btn-a-trabajos:hover {
+    color: white;
+    border-color: black;
+    transition: all .5s;
+}
+
+/* SECCIÓN CONOCENOS */
+
+#conocenos {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/cuervo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.column1-conocenos,
+.column2-conocenos {
+    flex: 0 0 50%;
+}
+
+.column1-conocenos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column1-conocenos img:hover {
+    transform: scale(1.05);
+    transition: all .3s;
+}
+
+.column1-conocenos .descripcion {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    font-family: var(--neue-font);
+    color: white;
+    padding: 2rem;
+    margin-left: 1.5rem;
+    width: 70%;
+    line-height: 1.5rem;
+}
+
+.descripcion img {
+    align-self: center;
+    margin-bottom: 2rem;
+    width: 70%;
+    height: auto;
+}
+
+.column2-conocenos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.column2-conocenos video {
+    width: 90%;
+    height: auto;
+}
+
+.iconos {
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+.iconos a {
+    margin-right: 1rem;
+}
+
+.iconos a:hover {
+    color: red;
+    transition: all .3s;
+}
+
+/* S E C C I Ó N  S E R V I C I O S */
+
+#servicios {
+    height: 170vh;
+    width: 100%;
+    background-image: url(img/fondo1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.capa-servicios {
+    height: 170vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.row {
+    padding: 2rem 0;
+}
+
+
+#servicios .titulo {
+    font-family: var(--neue-font);
+    font-size: 3rem;
+    color: white;
+    font-weight: 300;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    padding-left: 1rem;
+    font-style: underline;
+    padding-right: 1rem;
+}
+
+.contenedor-servicio {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: var(--neue-font);
+    line-height: 1.4rem;
+    position: relative;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.contenedor-servicio:hover {
+    transform: scale(1.03);
+    transition: all .3s;
+}
+
+.titulo-servicio {
+    font-family: var(--neue-font);
+    font-size: 1.3rem !important;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 11rem;
+    display: inline;
+    padding: .8rem .9rem;
+    font-weight: 500;
+    z-index: 1;
+}
+
+.contenedor-servicio p {
+    line-height: 1.4rem;
+    font-size: .95rem;
+    word-spacing: .1rem;
+    margin: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.btn-servicios {
+    padding: .4rem;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    border: thin solid white;
+    background-color: rgba(0, 0, 0, .7);
+    font-size: .9rem;
+    border-radius: 1rem;
+    position: relative;
+    margin-left: 1rem;
+    font-family: var(--neue-font);
+    margin-bottom: 1rem;
+}
+
+.btn-servicios:hover {
+    color: white;
+    border-color: black;
+    transition: all .5s;
+}
+
+/* A N I M A C I O N E S  */
+
+/* Define los estilos iniciales del elemento antes de la animación */
+.fadeIn {
+    opacity: 0; /* Inicialmente el elemento estará invisible */
+    transform: translateY(20px); /* También puedes ajustar la propiedad 'translateY' para cambiar la dirección de la animación */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Establece la duración y el efecto de la transición */
+  }
+  
+  /* Cuando el elemento tenga la clase 'fadeIn', aplicará estos estilos animados */
+  .fadeIn.active {
+    opacity: 1; /* El elemento se volverá visible */
+    transform: translateY(0); /* El elemento volverá a su posición original */
+  }
+  
+
+.animado {
+    opacity: 0;
+    transition: all .5s;
+}
+
+.animado-load {
+    opacity: 0;
+    transition: all .5s;
+}
+
+.mostrarArriba {
+    animation: mostrarArriba 1s;
+}
+
+@keyframes mostrarArriba {
+    0% {
+        transform: translateY(60px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Sección Responsiva */
+
+@media screen and (max-width: 780px) {
+    /* I N I C I O */
+    #inicio .column1 {
+        display: none;
+    }
+
+    #inicio .column2 {
+        display: flex;
+        flex: 0 0 100%;
+    }
+
+    .column2 .presentacion {
+        display: flex;
+        justify-content: center;
+        padding: 1.5rem;
+    }
+    /* C O N O C E N O S */
+    #conocenos {
+        background-size: cover;
+    }
+
+    #conocenos .container-propio {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-propio .column1-conocenos .descripcion {
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, .9);
+    }
+
+    .container-propio .column2-conocenos {
+        display: none;
+    }
+
+    .navbar-propio .opciones-seccion {
+        display: none;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    #inicio .column1 .cuadrado2 {
+        width: 70%;
+        right: 70px;
+    }
+
+    .descripcion img {
+        height: 150px;
+        width: auto;
+    }
+}
+
+/* MEDIAQUERIES BOOSTRAP */
+
+@media (max-width: 767.98px) { 
+
+    /* B A R R A  D E  N A V E G A C I Ó N */
+
+    .navbar-propio {
+        justify-content: flex-start;
+    }
+
+    /* S E R V I C I O S */
+    #servicios {
+        height: 280vh;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .capa-servicios {
+        height: 280vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .5);
+    }
+
+    .correccion-titulo {
+        top: 14rem !important;
+    }
+
+    .titulo-servicio {
+        top: 11.5rem;
+        margin: 0 !important;
+    }
+    #servicios .contenedor-servicio {
+        
+    }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (min-width: 638px) and (max-width: 785px) { 
+    #servicios {
+        height: 330vh;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .capa-servicios {
+        height: 330vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .5);
+    }
+
+    .contenedor-servicio .p-correc {
+        margin-left: 0;
+        position: relative;
+        right: 17rem;
+    }
+ }
