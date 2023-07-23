@@ -19,10 +19,10 @@
     <a href="#inicio"><div class="logo-visions border"><span class="red">NO.</span>COBRO</div></a>
 
     <ul class="opciones-seccion">
-      <a href="#inicio">
+      <a href="trabajos.html">
         <li>Inicio</li>
       </a>
-      <a href="#servicios">
+      <a href="fuente.html">
         <li>Servicios</li>
       </a>
       <a href="">
@@ -38,13 +38,16 @@
   </nav>
   <!-- S E C C I Ó N    I N I C I O -->
   <section id="inicio">
-    <div class="capa-inicio">
-      <!-- Barra de navegación -->
+    <video autoplay loop muted>
+      <source src="img/humoo.mp4"
+      type="video/mp4">
+    </video>
+    <div class="capa"></div>
       <!-- Primera página -->
 
       <!-- Lado izquierdo Desktop-->
       <div class="container-propio">
-        <div class="column1">
+        <div class="column1 fadeInLeft">
           <div class="cuadrado1"></div>
           <div class="cuadrado2"></div>
           <div class="cuadrado3"></div>
@@ -53,15 +56,14 @@
 
 
         <div class="column2">
-          <p class="titulo animado">Producción audiovisual y fotografía</p>
-          <p class="presentacion animado">Somos un equipo de profesionales del rubro de la audiovisión y de la comunicación.
+          <p class="titulo1 fadeInRight" id="fuente">Producción audiovisual y fotografía</p>
+          <p class="presentacion fadeInLeft">Somos un equipo de profesionales del rubro de la audiovisión y de la comunicación.
             Diseñamos y producimos
             creaciones audiovisuales.
           </p>
-          <a href="#servicios" class="btn-a-trabajos animado">Conocé nuestros servicios</a>
+          <a href="#servicios" class="btn-a-trabajos fadeInRight">Conocé nuestros servicios</a>
         </div>
       </div>
-    </div>
   </section>
 
   <!-- S E C C I Ó N    C O N O C E N O S -->
@@ -94,57 +96,61 @@
 
   <!-- SERVICIOS -->
   <section id="servicios">
-    <div class="capa-servicios">
-      <div class="container-fluid d-flex flex-column vh-100 justify-content-start">
-        <p class="titulo text-center">Nuestros servicios</p>
-        <div class="row ms-3 me-3 justify-content-center servicios">
-          <div class="d-flex flex-column align-items-start justify-content-stretch col-lg-4 me-lg-5 mb-sm-2 contenedor-servicio animado">
-            <p class="titulo-servicio">Producción audiovisual</p>
-            <video src="img/camara2-video.mp4" class="img-fluid" autoplay loop no-controls></video>
-            <p>Producimos trabajos audiovisuales de alta calidad para marcas y clientes
-              autonómos.
-            </p>
-            <a href="" class="btn-servicios">Ver nuestro trabajo</a>
-          </div>
-          <div class="d-flex flex-column align-items-start col-lg-4 mb-sm-2 contenedor-servicio animado">
-            <p class="titulo-servicio">Entrevistas a artistas</p>
-            <video src="img/produccion_video.mp4" class="img-fluid" autoplay loop no-controls></video>
-            <p>Si sos artista y buscás un lugar donde darte a conocer, producimos entrevistas en las que sos el protagonista.
-            Las entrevistas no tienen costo económico.
-            </p>
-            <a href="" class="btn-servicios">Quiero una entrevista</a>
-          </div>
-          <div class="d-flex flex-column align-items-end col-lg-4 mt-lg-4 mt-sm-4 contenedor-servicio animado">
-            <p class="titulo-servicio correccion-titulo">Fotografía</p>
-            <!-- Inicio carousel -->
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100 img-fluid" src="img/luna.jpg" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100 img-fluid" src="img/blackcat.jpg" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100 img-fluid" src="img/chico1.jpg" alt="Third slide">
-              </div>
+    <div class="capa-servicios"></div>
+        <!-- <video autoplay loop muted>
+            <source src="img/bg-servicios.mp4"
+            type="video/mp4">
+        </video> -->
+    <div class="titulo-servicios animado">Nuestros servicios</div>
+    <!-- Inicio ROW de tarjetas -->
+        <div class="container-servicios ">
+            <!-- Primer tarjeta -->
+            <div class="servicio animado">
+              <video class=""autoplay loop muted>
+                <source src="img/moto-corte.mp4"
+                type="video/mp4">
+              </video>
+                <div class="multimedia">
+                    <span class="titulo">Producción audiovisual</span>
+                </div>
+                <p class="descripcion-servicio">
+                    Producimos trabajos audiovisuales de alta calidad para marcas y clientes
+                    autonómos.
+                </p>
+                <a href="" class="btn-servicio">Ver nuestro trabajo</a>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <!-- <span class="sr-only">Previous</span> -->
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <!-- <span class="sr-only">Next</span> -->
-            </a>
-          </div>
-          <!-- Fin carousel -->
-          <p class="p-correc">Ofrecemos servicios de fotografía para cualquier tipo de actividad.</p>
-          <a href="" class="btn-servicios align-self-start">Necesito una sesión</a>
-          </div>
-          </div>
-      </div>
-    </div>
+            <!--  -->
+            <!-- Tercer tarjeta -->
+            <div class="servicio animado">
+              <video autoplay loop muted>
+                <source src="img/corto-bebida.mp4"
+                type="video/mp4">
+              </video>
+                <div class="multimedia multimedia-fotografia">
+                    <span class="titulo">Fotografía</span>
+                </div>
+                <p class="descripcion-servicio">Ofrecemos servicios de fotografía para cualquier tipo de actividad.
+                </p>
+                <a href="" class="btn-servicio">Necesito una sesión</a>
+            </div>
+            <!--  -->
+            <!-- Segunda tarjeta -->
+            <div class="servicio animado">
+              <video autoplay loop muted>
+                  <source src="img/daynine-video.mp4"
+                  type="video/mp4">
+                </video>
+                <div class="multimedia">
+                    <span class="titulo">Entrevistas a artistas</span>
+                </div>
+                <p class="descripcion-servicio">
+                    Si sos artista y buscás un lugar donde enseñarnos sobre tu pasión, producimos entrevistas en las que sos el protagonista.
+                </p>
+                <a href="" class="btn-servicio">Quiero una entrevista</a>
+            </div>
+            <!--  -->
+        </div>
+        <!-- FIN ROW DE TARJETAS -->
   </section>
 
   <section class="footer d-fex flex-column text-white pb-4 pt-2">
