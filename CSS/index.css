@@ -1,0 +1,767 @@
+:root {
+    --neue-font: 'Neue Haas Grotesk Display Pro', sans-serif;
+    --akira-font: 'Akira Expanded', sans-serif;
+}
+
+@font-face {
+    font-family: 'Akira-tildes';
+    src: url(../img/akira-expanded-bold.ttf);
+}
+
+/* Reset CSS */
+
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: sans-serif;
+}
+
+/* Utilities */
+
+p {
+    margin-bottom: 0;
+}
+
+.red {
+    color: red;
+}
+
+.border {
+    border: thin solid white;
+}
+
+.capa-inicio {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .25);
+}
+
+/* Barra de navegación */
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: white;
+}
+
+.navb {
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+}
+
+.navb .logo {
+    font-family: var(--akira-font);
+    color: white;
+    background-color: white;
+    color: black;
+    margin-left: 1rem;
+    padding: 0 .5rem;
+}
+
+.panel {
+    display: none;
+}
+
+.navb ol {
+    font-family: var(--neue-font);
+    font-size: .9rem;
+    display: flex;
+    margin-left: auto;
+    position: relative;
+    top: .5rem;
+}
+
+ol > * {
+    list-style: none;
+    margin-right: 1rem;
+}
+
+.navb ol > *:hover {
+    opacity: .6;
+    transition: all .4s ease;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: black;
+    width: 100%;
+    height: 7rem;
+    font-family: var(--neue-font);
+    font-size: .8rem;
+}
+
+.redes-sociales .redes {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.redes i {
+    margin-right: 1rem;
+}
+
+/* SECCIÓN INICIO */
+
+#inicio {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    margin: 0;
+    background-color: black;
+}
+
+#inicio video {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+#inicio .capa {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    /* background-color: rgba(0, 0, 0, .0); */
+}
+
+/* Primer página */
+
+.container-propio {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* Lado izquierdo desktop */
+
+.column1 {
+    position: relative;
+    padding: 1rem;
+}
+
+.column1 .cuadrado1 {
+    position: absolute;
+    top: 2.2rem;
+    left: 1.5rem;
+    height: 50vh;
+    width: 48%;
+    background-color: black;
+    padding: 20px;
+    background-image: url(../img/luna.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: groove solid black;
+}
+
+.column1 .cuadrado2 {
+    border: groove solid black;
+    position: absolute;
+    bottom: 3rem;
+    right: 7rem;
+    height: 35vh;
+    width: 60%;
+    background-image: url(../img/rosa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.column1 .cuadrado3 {
+    border: groove solid black;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    height: 53vh;
+    width: 45%;
+    padding: 2rem;
+    background-color: black;
+    padding: 20px;
+    background-image: url(../img/faro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cuadrado1:hover,
+.cuadrado2:hover,
+.cuadrado3:hover {
+    transform: scale(1.02);
+    transition: all .3s;
+}
+
+/* Lado derecho desktop */
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/fogata.jpg);
+    background-position: center;
+    width: 85%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.titulo1 {
+    font-family: 'Akira-tildes';
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-weight: 300;
+    position: relative;
+    bottom: 27px;
+    text-align: center;
+    margin-right: 2rem;
+    margin-left: 1.5rem;
+}
+
+.titulo-efecto {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    /* Cambio de tamaño durante la transición */
+    /* text-shadow: 0 0 2px rgb(255, 255, 255); */
+    transition: color 1s ease, font-size 1s ease !important;
+}
+
+.column2 .presentacion {
+    background-color: black;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: .96rem;
+    padding: 1rem 1rem;
+    line-height: 1.4rem;
+    color: white;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+}
+
+
+.column2 .btn-a-trabajos {
+    padding: .4rem;
+    border: thin solid white;
+    background-color: rgba(0, 0, 0, 1);
+    font-size: .9rem;
+    border-radius: 1rem;
+    margin-top: .5rem;
+    font-family: var(--neue-font);
+}
+
+.btn-a-trabajos:hover {
+    color: white;
+    border-color: black;
+    transition: all .5s;
+}
+
+/* SECCIÓN CONOCENOS */
+
+#conocenos {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/cuervo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.column1-conocenos,
+.column2-conocenos {
+    flex: 0 0 50%;
+}
+
+.column1-conocenos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column1-conocenos img:hover {
+    transform: scale(1.05);
+    transition: all .3s;
+}
+
+.column1-conocenos .descripcion {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    font-family: var(--neue-font);
+    color: white;
+    padding: 2rem;
+    font-size: .96rem;
+    margin-left: 1.5rem;
+    width: 70%;
+    line-height: 1.5rem;
+}
+
+.descripcion img {
+    align-self: center;
+    margin-bottom: 2rem;
+    width: 70%;
+    height: auto;
+}
+
+.column2-conocenos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.column2-conocenos video {
+    width: 90%;
+    position: relative;
+    height: auto;
+}
+
+.iconos {
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+.iconos a {
+    margin-right: 1rem;
+}
+
+.iconos a:hover {
+    color: red;
+    transition: all .3s;
+}
+
+/* S E C C I Ó N  S E R V I C I O S */
+.capa-servicios {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.img-mobile {
+    display: none;
+}
+
+#servicios video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .9;
+}
+
+#servicios {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+}
+
+.titulo {
+    color: white;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-top: 1rem;
+    z-index: 3;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Akira-tildes';
+}
+
+.titulo .barra {
+    font-size: 4.5rem;
+    font-weight: 400;
+    margin-right: .5rem;
+    font-family: var(--neue-font);
+}
+
+.texto > * {
+    font-size: 1.3rem;
+}
+
+.container-servicios {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    z-index: 3;
+}
+
+.container-servicios .servicio {
+    flex: 0 0 33%;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+.servicio video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-servicios .servicio:hover {
+    transform: scale(1.03);
+    transition: all .3s;
+}
+
+.container-servicios .multimedia {
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.multimedia .titulo {
+    position: absolute;
+    top: .5rem;
+    left: 1rem;
+    padding: 1rem;
+    font-family: var(--neue-font);
+    background-color: rgba(0, 0, 0, .7);
+    text-align: center;
+    letter-spacing: .04;
+    font-size: 1.1rem;
+    font-weight: 300;
+    word-spacing: .2rem;
+}
+
+@font-face {
+    font-family: 'Akira-tildes';
+    src: url(../img/akira-expanded-bold.ttf);
+}
+
+.descripcion-servicio {
+    font-size: .9rem;
+    line-height: 1.4rem;
+    word-spacing: .1rem;
+    position: relative;
+    width: 90%;
+    margin-left: .5rem;
+    padding: .7rem;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: .5rem;
+    font-family: var(--neue-font);
+}
+
+.btn-servicio {
+    outline: none;
+    text-decoration: none;
+    font-family: var(--neue-font);
+    color: white;
+    padding: .4rem;
+    border: thin solid white;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    background-color: rgba(0, 0, 0, .6);
+    font-size: .9rem;
+    border-radius: 1rem;
+    margin-left: auto;
+    display: inline-block;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    left: 1rem;
+    z-index: 1;
+}
+
+.btn-servicio:hover {
+    border: thin solid black;
+    background-color: black;
+    transition: all .5s ease;
+}
+
+@media (max-width: 799px) {
+
+    .titulo-servicios {
+        margin-bottom: 2rem;
+        padding-top: 2rem;
+    }
+
+    .container-servicios .servicio {
+        flex-basis: 100%;
+        margin: 0;
+        margin-bottom: 3rem;
+    }
+}
+
+/* A N I M A C I O N E S  */
+
+/* Define los estilos iniciales del elemento antes de la animación */
+.fadeInLeft {
+    opacity: 0;
+    /* Inicialmente el elemento estará invisible */
+    transform: translateX(-100px);
+    /* También puedes ajustar la propiedad 'translateY' para cambiar la dirección de la animación */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    /* Establece la duración y el efecto de la transición */
+}
+
+.fadeInRight {
+    opacity: 0;
+    /* Inicialmente el elemento estará invisible */
+    transform: translateX(100px);
+    /* También puedes ajustar la propiedad 'translateY' para cambiar la dirección de la animación */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Cuando el elemento tenga la clase 'fadeIn' y 'active', aplicará estos estilos animados */
+.active {
+    opacity: 1;
+    /* El elemento se volverá visible */
+    transform: translateY(0);
+    /* El elemento volverá a su posición original */
+}
+
+
+.animado {
+    opacity: 0;
+    transition: all .5s;
+}
+
+
+.mostrarArriba {
+    animation: mostrarArriba 1s;
+}
+
+@keyframes mostrarArriba {
+    0% {
+        transform: translateY(60px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* ------------------------------------------------------- Sección RESPONSIVA ----------------------------------- */
+
+@media screen and (max-width: 780px) {
+
+    /* N A V B A R MOBILE */
+    .navb .hambur {
+        display: block;
+    }
+
+    .navb ol {
+        display: none;
+    }
+
+    .navb .hambur {
+        margin-left: auto;
+        position: relative;
+        right: 1rem;
+    }
+
+    /* PANELLL */
+    .panel {
+        position: sticky;
+        top: 3rem;
+        z-index: 998;
+        width: 100%;
+        font-family: var(--neue-font);
+        font-size: .9rem;
+        background-color: rgb(0, 0, 0);
+        display: none;
+        transition: transform 0.3s ease, opacity 0.3 ease;
+        /* De arriba (X-Y)*/
+        transform: translate(0, -100%);
+        /* De abajo
+        transform: translate(0, 100%);
+        De derecha
+        transform: translate(100%, 0);
+        Dei izquierda
+        transform: translate(-100%, 0); */
+    }
+
+    .panel.is-active{
+        transform: translate(0, 0);
+        display: block;
+    }
+
+    /* características para colocar el botón en la esquina inferior derecha */
+    .panel-btn{
+        z-index: 999;
+        margin-left: auto;
+        position: relative;
+        right: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        font-size: 2rem;
+    }
+
+    
+    .panel ol {
+        margin: 0;
+    }
+
+    ol:first-child {
+        padding-top: 1rem;
+    }
+
+
+    /* I N I C I O */
+    #inicio video {
+        display: none;
+    }
+
+    #inicio .column1 {
+        display: none;
+    }
+
+    #inicio {
+        background-image: url(../img/fogata.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #inicio .column2 {
+        display: flex;
+        flex: 0 0 100%;
+    }
+
+    #inicio .column2 .btn-a-trabajos {
+        background-color: rgba(0, 0, 0, .8);
+    }
+
+
+    .column2 .presentacion {
+        display: flex;
+        justify-content: center;
+        padding: 1.5rem;
+    }
+
+    /* C O N O C E N O S */
+    #conocenos {
+        background-size: cover;
+    }
+
+    #conocenos .container-propio {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 100%;
+        height: 100%;
+    }
+
+    #conocenos .column1-conocenos {
+        width: 100%;
+    }
+
+    .container-propio .column1-conocenos .descripcion {
+        padding: 1rem;
+        margin: 0;
+        width: 90%;
+        background-color: rgba(0, 0, 0, .9);
+    }
+
+    .container-propio .column2-conocenos {
+        display: none;
+    }
+
+    .navbar-propio .opciones-seccion {
+        display: none;
+    }
+
+    /* S E R V I C I O S  */
+
+    .dsp-none {
+        display: none;
+    }
+
+    #servicios .titulo {
+        margin-bottom: 1rem;
+    }
+
+    .container-servicios {
+        width: 100%;
+        justify-content: start;
+    }
+
+    .img-mobile {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: .9;
+    }
+
+    .container-servicios .servicio {
+        flex: 0 0 100%;
+        margin-top: 0;
+        margin-right: .2rem;
+        margin-bottom: 0;
+        background-color: black;
+        color: white;
+        position: relative;
+    }
+
+    .container-servicios .servicio3 {
+        flex: 0 0 100%;
+        margin-bottom: 4rem;
+        background-color: black;
+        color: white;
+        position: relative;
+    }
+
+    .multimedia .titulo {
+        position: relative;
+        background-color: rgba(0, 0, 0, .6);
+        padding: .8rem;
+        font-weight: 200;
+        bottom: 5rem;
+    }
+
+    .container-servicios .servicio:hover {
+        transform: none;
+        transition: none;
+    }
+}

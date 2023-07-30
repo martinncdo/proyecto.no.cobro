@@ -36,10 +36,30 @@ window.addEventListener('load', ()=> {
   texto = document.getElementById("fuente");
   setTimeout(()=>{
       texto.classList.add("titulo-efecto");
-  },3500);
-})
-  
-  
+  },1200);
+});
 
+//función navbar responsive
+  
+const d = document;
+
+function hamburgerMenu(panelBtn, panel, menuLink){
+  const d = document;
+
+  d.addEventListener("click", e => {
+      if(e.target.matches(panelBtn) || e.target.matches(`${panelBtn} *`)){
+          d.querySelector(panel).classList.toggle("is-active");
+          d.querySelector(panelBtn).classList.toggle("is-active");    
+          }
+          
+      if (e.target.matches(menuLink)){
+          d.querySelector(panel).classList.remove("is-active");
+          d.querySelector(panelBtn).classList.remove("is-active");
+      }
+
+      });
+  }
+
+hamburgerMenu(".panel-btn",".panel",".menu a");
 
 
