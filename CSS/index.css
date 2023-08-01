@@ -555,7 +555,6 @@ ol > * {
     /* El elemento volverá a su posición original */
 }
 
-
 .animado {
     opacity: 0;
     transition: all .5s;

@@ -36,7 +36,7 @@ window.addEventListener('load', ()=> {
   texto = document.getElementById("fuente");
   setTimeout(()=>{
       texto.classList.add("titulo-efecto");
-  },1200);
+  },1100);
 });
 
 //función navbar responsive
