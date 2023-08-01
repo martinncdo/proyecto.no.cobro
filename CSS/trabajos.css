@@ -107,6 +107,7 @@ ol > * {
     top: 3rem;
     z-index: 10;
     color: white;
+    font-family: var(--neue-font);
     background-color: rgba(0, 0, 0, .6);
 }
 
